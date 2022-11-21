@@ -10,3 +10,6 @@ Press the PlatformIO *Upload* button, and you should see the on-board LED start 
 
 ## What's happening behind the scenes?
 The [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) is a very powerful microcontroller that features a dual-core processor, and a ["PIO" (programmable Input/Output) logic block](https://hackspace.raspberrypi.com/articles/what-is-programmable-i-o-on-raspberry-pi-pico) that can run very simple instructions independently of the processor. In this demo, the PIO is set up to blink the LED independently, freeing up the processor to run other tasks. While blinking an LED is a simple low-speed IO task, PIO can be used to run simple high-speed IO tasks such as adressable LEDs, logic analysis, or creating an additional i2c, SPI or UART interfaces. 
+
+## Writing more code
+This code example does not use the Arduino framework. It is written in C++ and makes use of the Raspberry Pi Pico SDK. You can find the API documentation [here](https://raspberrypi.github.io/pico-sdk-doxygen/modules.html). 
